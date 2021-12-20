@@ -1,0 +1,85 @@
+
+Audience Question
+
+Q: no sir
+
+A: <?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation=" http://www.springframework.org/schema/beans 
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+  <bean id="bookTicket" class="com.jspider.springbasics.xmlconfig.BookTicket">
+   <property name="ticketNumber" value="BNGLR123"></property>
+   <property name="from" value="Bangalore"></property>
+   <property name="to" value="Delhi"></property>
+  </bean>
+  
+  <bean id="person" class="com.jspider.springbasics.xmlconfig.Person">
+    <constructor-arg name="name" value="raveesh"></constructor-arg>
+    <constructor-arg name="age" value="40"></constructor-arg>
+    <constructor-arg name="email" value="raveesh@jspider.com"></constructor-arg>
+  </bean>
+
+</beans>
+
+
+
+https://youtu.be/dwjwSYOrnS8
+@DateTimeFormat(pattern = "MM/dd/yyyy")
+	private Date birthday;
+
+
+Date d=null;
+		try {
+			d = new SimpleDateFormat("YYYY-MM-DD").parse(DOB);
+		} catch (ParseException e1) {
+			
+			e1.printStackTrace();
+		}
+		java.sql.Date k=new java.sql.Date(d.getTime());
+
+
+
+
+https://youtu.be/CCZ3psHmcUQ
+
+
+
+
+
+https://youtu.be/zixMjIbjx0Y
+
+
+
+
+
+
+
+@Temporal(TemporalType.TIMESTAMP)
+	@Column(nullable=false)
+	private Date lastupdate;
+	@PrePersist
+	private void onCreate() {
+		lastupdate=new Date();
+	}
+
+
+
+
+
+
+
+<p class="birthday"><i>DOB</i></p>
+      <input type="date" name="birthday">
+      <div class="birth_date"></div>
+</div>
+
+
+
+
+
+
+https://www.javainuse.com/spring/bootupload
